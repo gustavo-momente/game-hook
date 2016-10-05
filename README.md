@@ -1,7 +1,13 @@
-# GameHook
+# :anchor: GameHook
 GameHook allows you to fetch information in any game you are currently playing from the popular emulator "RetroArch" in real-time via WebAPI.
 
 > GameHook is still in early stages of development!
+
+## How do I get it?
+```git clone --recursive git@github.com:chris062689/game-hook.git```
+```npm update```
+## How do I check for updates?
+```git pull```
 
 ## Quick-Start Guide
 1) Download and install [RetroArch](http://www.libretro.com/index.php/retroarch-2/).
