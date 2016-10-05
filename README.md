@@ -10,7 +10,7 @@ GameHook allows you to fetch information in any game you are currently playing f
 
 ```npm update```
 ## How do I check for updates?
-```git pull```
+```git pull --recurse-submodules```
 
 ## Quick-Start Guide
 1. Download and install [Node.js](https:https://nodejs.org/), and reboot before proceeding with the remaining steps.
