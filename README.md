@@ -61,3 +61,7 @@ The GameHook server exports a live-feed of your game through a Web API / JSON.
 ### Internal Components of the GameHook Client:
 Because the GameHook server is served through Web API / JSON, any Web API enabled platform can leverage the GameHook server.
 _See the /data/clients folder for more information on how to write your own._
+
+
+> Program your own scripts to interact with your favorite games!
+![Image](https://i.imgur.com/brB5kJH.png | width=800)
