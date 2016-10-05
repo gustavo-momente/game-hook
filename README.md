@@ -18,7 +18,7 @@ GameHook allows you to fetch information in any game you are currently playing f
 3. Open RetroArch, set Network CMD Enable to true within Settings.
 4. Start your game using a compatable core.
 5. Apply the example configuration below, or your own based on the game you'd like to use.
-6. Start the GameHook server and verify it has connected to the driver.
+6. Start the GameHook server `node main.js` and verify it has connected to the driver.
 7. Open an approperate client _(inside the /data/clients folder, often an HTML file.)_
 
 ## What are some examples of what GameHook do?
