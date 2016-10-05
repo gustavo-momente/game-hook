@@ -75,6 +75,8 @@ Driver.prototype.send_message = function(message) {
  * from the read_buffer. When a response is recieved from RetroArch,
  * the data is put into the read_buffer waiting to be picked up.
  * After, clear the buffer as to not keep stale data around for next time.
+ * TODO: Refactor this horrible function to be based on promises instead of
+ *       forcing the main thread to sleep and wait.
  */
 Driver.prototype.read_hex = function(address, length, retries = 9) {
     this.send_message(`READ_CORE_RAM ${address} ${length}`);
