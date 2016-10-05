@@ -13,12 +13,13 @@ GameHook allows you to fetch information in any game you are currently playing f
 ```git pull```
 
 ## Quick-Start Guide
-1. Download and install [RetroArch](http://www.libretro.com/index.php/retroarch-2/).
-2. Open RetroArch, set Network CMD Enable to true within Settings.
-3. Start your game using a compatable core.
-4. Apply the example configuration below, or your own based on the game you'd like to use.
-5. Start the GameHook server and verify it has connected to the driver.
-6. Open an approperate client _(inside the /data/clients folder, often an HTML file.)_
+1. Download and install [Node.js](https:https://nodejs.org/), and reboot before proceeding with the remaining steps.
+2. Download and install [RetroArch](http://www.libretro.com/index.php/retroarch-2/).
+3. Open RetroArch, set Network CMD Enable to true within Settings.
+4. Start your game using a compatable core.
+5. Apply the example configuration below, or your own based on the game you'd like to use.
+6. Start the GameHook server and verify it has connected to the driver.
+7. Open an approperate client _(inside the /data/clients folder, often an HTML file.)_
 
 ## What are some examples of what GameHook do?
 
