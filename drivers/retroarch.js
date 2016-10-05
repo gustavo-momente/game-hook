@@ -44,7 +44,7 @@ client.on('error', function() {
 
 Driver.prototype.check_connection = function() {
     logger.info('Driver is attempting to establish connection with RetroArch...');
-    if (this.read_hex("00", 1, 10) == null) {
+    if (this.read_hex("00", 1) == null) {
         return false;
     }
     return true;
@@ -76,7 +76,7 @@ Driver.prototype.send_message = function(message) {
  * the data is put into the read_buffer waiting to be picked up.
  * After, clear the buffer as to not keep stale data around for next time.
  */
-Driver.prototype.read_hex = function(address, length, retries = 75) {
+Driver.prototype.read_hex = function(address, length, retries = 9) {
     this.send_message(`READ_CORE_RAM ${address} ${length}`);
 
     // Wait for a response from the buffer.
@@ -84,7 +84,7 @@ Driver.prototype.read_hex = function(address, length, retries = 75) {
     require('deasync').loopWhile(function() {
         loops += 1;
         sleep.usleep(750);
-        logger.silly(`Waiting on response from read buffer for address ${address}.`);
+        logger.silly(`Waiting on response from read buffer for address ${address} on loop ${loops}.`);
         return read_buffer[address] == null && loops < retries;
     });
 
