@@ -3,6 +3,8 @@ GameHook allows you to fetch information in any game you are currently playing f
 
 > GameHook is still in early stages of development!
 
+![Image](https://i.imgur.com/PP4qJEo.png | width=800)
+
 ## How do I get it?
 ```git clone --recursive git@github.com:chris062689/game-hook.git```
 
@@ -19,8 +21,6 @@ GameHook allows you to fetch information in any game you are currently playing f
 6. Open an approperate client _(inside the /data/clients folder, often an HTML file.)_
 
 ## What are some examples of what GameHook do?
-
-![Image](https://i.imgur.com/PP4qJEo.png | width=800)
 
 There are example scripts and clients included.
 - `Example Clients` - Inside of the /data/clients folder, clients are typically HTML files. You can see examples for:
