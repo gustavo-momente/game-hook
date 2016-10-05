@@ -13,7 +13,7 @@ GameHook allows you to fetch information in any game you are currently playing f
 
 ## What are some examples of what GameHook do?
 
-![Image](https://imgur.com/a/5bZPC | width=800)
+![Image](https://i.imgur.com/PP4qJEo.png | width=800)
 
 There are example scripts and clients included.
 - `Example Clients` - Inside of the /data/clients folder, clients are typically HTML files. You can see examples for:
@@ -30,9 +30,9 @@ There are the following options available:
 - **Driver File** - The path to the driver
     - Default Value: `'./drivers/retroarch.js'`
 - **Mapper File** - The path to the mapper
-    - Example: `'./mappers/pokemon_rby.js'`)
+    - Example: `'./data/mappers/pokemon_rby.js'`)
 - **Scripts** - A list of scripts to automatically be ran.
-    - Example: `['./scripts/pokemon_rby_nuzlocke.js']`
+    - Example: `['./data/scripts/pokemon_rby_nuzlocke.js']`
 
 An example configuration would like like this:
 ```
