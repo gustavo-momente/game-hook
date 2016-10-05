@@ -6,7 +6,7 @@ GameHook allows you to fetch information in any game you are currently playing f
 ![Image](https://i.imgur.com/PP4qJEo.png | width=800)
 
 ## How do I get it?
-```git clone --recursive git@github.com:chris062689/game-hook.git```
+```git clone --recursive https://github.com/chris062689/game-hook.git```
 
 ```npm update```
 ## How do I check for updates?
