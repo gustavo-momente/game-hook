@@ -34,6 +34,7 @@ There are example scripts and clients included.
 Within the GameHook folder, open up `settings.js`.
 There are the following options available:
 - **Log Level** - Indicates the amount of logging that should be done. Useful for debugging.
+    - Default Value: `'info'`
 - **Driver File** - The path to the driver
     - Default Value: `'./drivers/retroarch.js'`
 - **Mapper File** - The path to the mapper
@@ -43,7 +44,7 @@ There are the following options available:
 
 An example configuration would like like this:
 ```
-exports.log_level = 'warn';
+exports.log_level = 'info';
 exports.driver_file = './drivers/retroarch.js';
 exports.mapper_file = './data/mappers/pokemon_rby.json';
 exports.scripts = ['./data/scripts/pokemon_rby_nuzlocke.js'];
