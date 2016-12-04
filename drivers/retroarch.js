@@ -78,13 +78,13 @@ Driver.prototype.send_message = function(message) {
  * TODO: Refactor this horrible function to be based on promises instead of
  *       forcing the main thread to sleep and wait.
  */
-Driver.prototype.read_hex = function(address, length, retries = 15) {
+Driver.prototype.read_hex = function(address, length, retries = 50) {
     this.send_message(`READ_CORE_RAM ${address} ${length}`);
 
     // Wait for a response from the buffer.
     var loops = 0;
     require('deasync').loopWhile(function() {
-        sleepms(750);
+        sleepms(650);
         loops += 1;
         logger.verbose(`Waiting on response from read buffer for address ${address} on loop ${loops}.`);
         return read_buffer[address] == null && loops < retries;
