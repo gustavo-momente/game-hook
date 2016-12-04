@@ -1,5 +1,6 @@
 var logger = require('winston');
 var util = require('util');
+var sleepms = require('sleep-ms');
 
 /* Initalize the Driver */
 var BaseDriver = require('./_hex.js');
