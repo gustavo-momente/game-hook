@@ -13,7 +13,7 @@ GameHook allows you to fetch information in any game you are currently playing f
 ```git pull --recurse-submodules```
 
 ## Quick-Start Guide
-1. Download and install [Node.js](https:https://nodejs.org/), and reboot before proceeding with the remaining steps.
+1. Download and install [Node.js](https://nodejs.org/), and reboot before proceeding with the remaining steps.
 2. Download and install [RetroArch](http://www.libretro.com/index.php/retroarch-2/).
 3. Open RetroArch, set Network CMD Enable to true within Settings.
 4. Start your game using a compatable core.
