@@ -1,6 +1,6 @@
 var logger = require('winston');
 var util = require('util');
-var sleep = require('system-sleep');
+var sleepms = require('sleep-ms');
 
 /* Initalize the Driver */
 var BaseDriver = require('./_hex.js');
@@ -78,14 +78,14 @@ Driver.prototype.send_message = function(message) {
  * TODO: Refactor this horrible function to be based on promises instead of
  *       forcing the main thread to sleep and wait.
  */
-Driver.prototype.read_hex = function(address, length, retries = 9) {
+Driver.prototype.read_hex = function(address, length, retries = 15) {
     this.send_message(`READ_CORE_RAM ${address} ${length}`);
 
     // Wait for a response from the buffer.
     var loops = 0;
     require('deasync').loopWhile(function() {
         loops += 1;
-        sleep(750);
+        sleepms(350);
         logger.silly(`Waiting on response from read buffer for address ${address} on loop ${loops}.`);
         return read_buffer[address] == null && loops < retries;
     });
