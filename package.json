@@ -9,7 +9,7 @@
     "deasync": "^0.1.8",
     "dgram": "^1.0.1",
     "express": "^4.14.0",
-    "sleep": "^4.0.0",
+    "system-sleep": "^1.0.0-k",
     "winston": "^2.2.0"
   },
   "preferGlobal": false,
