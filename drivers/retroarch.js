@@ -1,6 +1,5 @@
 var logger = require('winston');
 var util = require('util');
-var sleepms = require('sleep-ms');
 
 /* Initalize the Driver */
 var BaseDriver = require('./_hex.js');
@@ -85,7 +84,6 @@ Driver.prototype.read_hex = function(address, length, retries = 9) {
     var loops = 0;
     require('deasync').loopWhile(function() {
         loops += 1;
-        sleepms(750);
         logger.silly(`Waiting on response from read buffer for address ${address} on loop ${loops}.`);
         return read_buffer[address] == null && loops < retries;
     });
