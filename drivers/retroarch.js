@@ -83,6 +83,7 @@ Driver.prototype.read_hex = function(address, length, retries = 15) {
     // Wait for a response from the buffer.
     var loops = 0;
     require('deasync').loopWhile(function() {
+        sleepms(600);
         loops += 1;
         console.log(loops);
         logger.verbose(`Waiting on response from read buffer for address ${address} on loop ${loops}.`);
